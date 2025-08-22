@@ -45,12 +45,6 @@ pesquisar_wikipedia()
 
 
 
-
-
-
-
-
-
 WikiBot Termux
 
 Um bot simples em Python que busca respostas no Wikipédia em português e fala as respostas usando o Termux:API. Ele mostra um resumo curto da resposta e dá a opção de ouvir uma versão longa.
@@ -85,14 +79,9 @@ pip install wikipedia
 
 Como usar
 
-1. Clone ou baixe este repositório:
+2. use isso no termux aí você coloca o código lá em cima👆 que eu coloquei
 
-git clone <URL_DO_SEU_REPOSITORIO>
-
-
-2. Entre na pasta do projeto:
-
-cd nome-do-repositorio
+👉1 nano wiki_bot.py
 
 
 3. Execute o programa:
@@ -102,7 +91,7 @@ python wiki_bot.py
 
 4. Digite qualquer pergunta. Exemplo:
 
-Pergunte algo (ou SAIR): Minecraft
+Pergunte algo (ou SAIR):
 
 
 5. O bot vai mostrar o resumo curto e falar a resposta.
