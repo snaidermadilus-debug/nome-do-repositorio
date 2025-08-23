@@ -39,3 +39,11 @@ def pesquisar_wikipedia():
             os.system('termux-tts-speak "Não encontrei nada no Wikipédia sobre isso."')
 
 pesquisar_wikipedia()
+
+Instale o pacote Python do Wikipédia: pip install wikipedia
+
+O Termux precisa do plugin TTS: pkg install termux-api (O comando termux-tts-speak só funciona se o Termux:API estiver instalado.)
+
+Salve o código em um arquivo, por exemplo: nano wikipedia-tts.py Cole seu código e salve (Ctrl+O para salvar, Ctrl+X para sair).
+
+Execute no Termux: python wikipedia-tts.py
