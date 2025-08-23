@@ -1,2 +1,6 @@
 1. Dependências
    Instale o pacote Python do Wikipédia: pip install wikipedia
+
+.  O Termux precisa do plugin TTS: pkg install termux-api (O comando termux-tts-speak só funciona se o Termux:API estiver instalado.)
+
+.  
