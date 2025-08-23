@@ -19,4 +19,4 @@ pip install wikipedia
 pkg install termux-api -y
 git clone https://github.com/snaidermadilus-debug/nome-do-repositorio.git
 cd nome-do-repositorio
-python wiki_bot.py
+python wiki_bot.py.
