@@ -6,3 +6,17 @@
 2. Salve o código em um arquivo, por exemplo: nano wikipedia-tts.py Cole seu código e salve (Ctrl+O para salvar, Ctrl+X para sair).
 
 3. Execute no Termux: python wikipedia-tts.py
+
+# Assistente Wikipédia no Termux
+
+### Instalação
+Abra o Termux e digite:
+
+```bash
+pkg update && pkg upgrade -y
+pkg install git python -y
+pip install wikipedia
+pkg install termux-api -y
+git clone https://github.com/snaidermadilus-debug/nome-do-repositorio.git
+cd nome-do-repositorio
+python wiki_bot.py.
