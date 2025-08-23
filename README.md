@@ -40,10 +40,23 @@ def pesquisar_wikipedia():
 
 pesquisar_wikipedia()
 
-Instale o pacote Python do Wikipédia: pip install wikipedia
 
-O Termux precisa do plugin TTS: pkg install termux-api (O comando termux-tts-speak só funciona se o Termux:API estiver instalado.)
 
-Salve o código em um arquivo, por exemplo: nano wikipedia-tts.py Cole seu código e salve (Ctrl+O para salvar, Ctrl+X para sair).
+# 🤖 Wiki Bot no Termux
 
-Execute no Termux: python wikipedia-tts.py
+Este é um assistente simples que responde perguntas usando a **Wikipédia** diretamente no **Termux**.  
+Ele também fala as respostas em voz alta usando o **Termux:API**.
+
+---
+
+## 📥 Instalação
+
+Abra o **Termux** e cole os comandos abaixo:
+
+```bash
+pkg update && pkg upgrade -y
+pkg install git python termux-api -y
+pip install wikipedia
+
+git clone https://github.com/snaidermadilus-debug/nome-do-repositorio.git
+cd nome-do-repositorio
