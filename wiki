@@ -1,0 +1,59 @@
+import wikipedia
+import os
+
+wikipedia.set_lang("pt")  # Português
+
+def falar(texto):
+    """Função para falar o texto no Termux"""
+    os.system(f'termux-tts-speak "{texto}"')
+
+def pesquisar_wikipedia():
+    while True:
+        pergunta = input("Pergunte algo (ou digite 'sair' para encerrar): ").strip()
+        
+        if pergunta.lower() == "sair":
+            print("Encerrando o programa. Até mais!")
+            falar("Encerrando o programa. Até mais!")
+            break
+
+        # Busca resultados
+        resultados = wikipedia.search(pergunta)
+
+        if not resultados:
+            print("\nNão encontrei nada no Wikipédia sobre isso.")
+            falar("Não encontrei nada no Wikipédia sobre isso.")
+            continue
+
+        melhor_resultado = resultados[0]
+        print(f"\nBuscando sobre: {melhor_resultado}")
+
+        try:
+            # Resposta curta (resumo)
+            resumo_curto = wikipedia.summary(melhor_resultado, sentences=3)
+            print("\nResposta do Wikipédia (curta):")
+            print(resumo_curto)
+            falar(resumo_curto)
+
+            # Versão longa opcional
+            opcao = input("\nQuer ouvir a versão longa? (sim/não) ").strip().lower()
+            if opcao == "sim":
+                conteudo = wikipedia.page(melhor_resultado).content
+                bloco = 800  # tamanho de cada parte
+                partes = [conteudo[i:i+bloco] for i in range(0, len(conteudo), bloco)]
+
+                for i, parte in enumerate(partes, start=1):
+                    print(f"\nParte {i}:")
+                    print(parte)
+                    falar(parte)
+
+                    if i < len(partes):  # só pergunta se ainda tem mais partes
+                        continuar = input("\nQuer que eu continue? (sim/não) ").strip().lower()
+                        if continuar != "sim":
+                            print("Ok, vamos parar por aqui.")
+                            falar("Ok, vamos parar por aqui.")
+                            break
+
+        except Exception as e:
+            print("\nErro ao buscar a página:", e)
+
+pesquisar_wikipedia()
