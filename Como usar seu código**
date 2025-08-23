@@ -3,4 +3,4 @@
 
 .  O Termux precisa do plugin TTS: pkg install termux-api (O comando termux-tts-speak só funciona se o Termux:API estiver instalado.)
 
-.  
+2. Salve o código em um arquivo, por exemplo: nano wikipedia-tts.py Cole seu código e salve (Ctrl+O para salvar, Ctrl+X para sair).
