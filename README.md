@@ -61,4 +61,5 @@ pip install wikipedia
 git clone https://github.com/snaidermadilus-debug/nome-do-repositorio.git
 cd nome-do-repositorio
 
+execute ele
 python3 "nano wiki_bot.py"
