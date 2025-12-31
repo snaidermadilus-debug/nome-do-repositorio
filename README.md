@@ -16,6 +16,13 @@ pkg install python termux-api -y
 termux-setup-storage
 
 
+
+
+
+
+
+
+
 #!/usr/bin/env python3
 import requests
 import os
