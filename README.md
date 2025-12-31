@@ -1,27 +1,3 @@
-📦 DEPENDÊNCIA (SÓ UMA) 
-
-pip install requests --no-cache-dir
-____________________ 
-
-▶️ COMO USAR 
-
-python criarimg.py
-____________________ 
-
-nano criarimg.py
-________
-pkg update -y
-pkg upgrade -y
-pkg install python termux-api -y
-termux-setup-storage
-
-
-
-
-
-
-
-
 
 #!/usr/bin/env python3
 import requests
@@ -128,3 +104,23 @@ while True:
         "-t", "image/*",
         "com.sec.android.gallery3d"
     ], check=False)
+
+
+
+
+📦 DEPENDÊNCIA (SÓ UMA) 
+
+pip install requests --no-cache-dir
+____________________ 
+
+▶️ COMO USAR 
+
+python criarimg.py
+____________________ 
+
+nano criarimg.py
+________
+pkg update -y
+pkg upgrade -y
+pkg install python termux-api -y
+termux-setup-storage
