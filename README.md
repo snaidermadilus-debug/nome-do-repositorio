@@ -103,14 +103,3 @@ while True:
         "-t", "image/*",
         "com.sec.android.gallery3d"
     ], check=False)
-
-
-_________________________________
-
-esse código criar qualquer imagem que você pedir para ele
-
-
-
-
-
-
