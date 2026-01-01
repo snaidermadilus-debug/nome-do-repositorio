@@ -181,3 +181,10 @@ def main():
 if __name__ == "__main__":
     socket.setdefaulttimeout(TIMEOUT)
     main()
+
+
+--------
+
+nano ia.py
+
+python ia.py
